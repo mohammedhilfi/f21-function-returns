@@ -1,6 +1,6 @@
-function ConvertDegreesFToC(degreesF)
-{
-	const degreesC = (degreesF - 32) * (5/9);
+function ConvertDegreesFToC(degreesF) {
+	const degreesC = (degreesF - 32) * (5 / 9);
+	return degreesC;
 
 	// 2) We need to give back the Celsius degrees to whomever
 	//      invoked the function, not just calculate them
@@ -8,7 +8,7 @@ function ConvertDegreesFToC(degreesF)
 }
 
 let temperatureInF = 76;
-let temperatureInC;
+let temperatureInC = ConvertDegreesFToC(temperatureInF);
 
 // 1) We need to invoke our conversion function with the
 //      76-degrees Fahrenheit variable and store the
